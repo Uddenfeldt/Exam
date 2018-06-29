@@ -1,0 +1,86 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: slategrey;
+}
+
+h2 {
+    text-align: center;
+    color: slategrey;
+}
+
+h3 {
+    text-align: center;
+    color: slategrey;
+}
+
+.introduction {
+    text-align: center;
+    color: slategrey;
+    font-size: 15px;
+}
+
+.introductionAboutUs {
+    text-align: center;
+    font-size: 15px;
+    color: slategrey;
+}
+.container1{
+    width:100%;
+    position:absolute;
+    float:left;
+}
+.subcontainer1{
+    position:relative;
+    width:25%;
+    float:left;
+   
+}
+
+.subcontainer2{
+   position:relative;
+   width: 25%;
+   float:left;
+}
+.subcontainer3{
+    position:relative;
+    width:50%;
+    float:left;
+    
+}
+.footerContainer{
+    position:relative;
+    width:100%;
+    
+}
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.image {
+    height: 50px;
+    width: 350px;
+    top: 1px;
+    left: 5px;
+}
