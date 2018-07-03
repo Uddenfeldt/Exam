@@ -6,16 +6,26 @@
 h1 {
     text-align: center;
     color: slategrey;
+    font-family:Georgia;
 }
 
 h2 {
     text-align: center;
     color: slategrey;
+    font-family: Georgia;
 }
 
 h3 {
     text-align: center;
     color: slategrey;
+    font-family: Georgia;
+}
+
+.link{
+    text-align:center;
+    color:slategrey;
+    font-family:Georgia;
+    font-size:35px;
 }
 
 .introduction {
@@ -40,6 +50,12 @@ h3 {
     float:left;
    
 }
+.divider-column{
+    float: left;
+    width:10%;
+    margin-right:5%;
+    overflow:hidden;
+}
 
 .subcontainer2{
    position:relative;
@@ -48,14 +64,18 @@ h3 {
 }
 .subcontainer3{
     position:relative;
-    width:50%;
+    width:25%;
     float:left;
     
 }
 .footerContainer{
     position:relative;
-    width:100%;
+    width:70%;
     
+}
+.linkedInContainer {
+    position: relative;
+    width: 30%;
 }
 
 hr {

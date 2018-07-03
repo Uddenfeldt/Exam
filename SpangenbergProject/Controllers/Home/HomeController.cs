@@ -29,6 +29,10 @@ namespace SpangenbergProject.Controllers
         {
             return View();
         }
+        public IActionResult BookingForPrivate()
+        {
+            return View();
+        }
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -40,5 +44,6 @@ namespace SpangenbergProject.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
     }
 }
