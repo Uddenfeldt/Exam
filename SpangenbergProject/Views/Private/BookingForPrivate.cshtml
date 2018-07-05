@@ -1,1 +1,32 @@
-﻿
+﻿@model SpangenbergProject.Models.Customer.CustomerModel
+<div class="subcontainer1 divider-column">
+    <h3>
+        Här kan ni göra en förfrågan om att boka tid hos oss, när vi tittat igenom vad ni önskar
+        <br />
+        för tid och datum så återkommer vi till er.
+        <br />
+        Mvh Erik Spangenberg och Lotta Wiberg
+    </h3>
+</div>
+<div class="subcontainer2 divider-column">
+    <form asp-action="BookingForPrivate" asp-controller="Form">
+        <label asp-for="firstName">Förnamn:</label><br />
+        <input asp-for="firstName" placeholder="Förnamn" /><br /><br />
+        <label asp-for="lastName">Efternamn:</label> <br />
+        <input asp-for="lastName" placeholder="Efternamn" /><br /><br />
+        <label asp-for="personalNumber">Personnummer:</label><br />
+        <input asp-for="personalNumber" placeholder="åå-mm-dd-XXXX" /><br /><br />
+        <label asp-for="email">E-Mail:</label><br />
+        <input asp-for="email" placeholder="Mailaddress" /><br /><br />
+        <label asp-for="dtm">Datum: </label> <br />
+        <input type="text" id="datepicker"><br /><br />
+        <input type="submit" />
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        $("#datepicker").datepicker();
+    });
+</script>

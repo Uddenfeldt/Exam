@@ -17,6 +17,17 @@ namespace SpangenbergProject.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult BookingForPrivate()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult BookingForPrivate(string FirstName, string LastName)
+        {
+            return Content($"Hello {FirstName} {LastName}");
+        }
 
     }
 }
