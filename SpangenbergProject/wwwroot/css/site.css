@@ -20,9 +20,12 @@ h3 {
     color: slategrey;
     font-family: Georgia;
 }
-
-.link{
+p{
     text-align:center;
+    color:slategrey;
+    font-family:Georgia;
+}
+.link{
     color:slategrey;
     font-family:Georgia;
     font-size:35px;
@@ -31,14 +34,9 @@ h3 {
 .introduction {
     text-align: center;
     color: slategrey;
-    font-size: 15px;
+    font-size: 20px;
 }
 
-.introductionAboutUs {
-    text-align: center;
-    font-size: 15px;
-    color: slategrey;
-}
 .container1{
     width:100%;
     position:absolute;
