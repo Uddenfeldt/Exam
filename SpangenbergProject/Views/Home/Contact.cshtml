@@ -1,20 +1,22 @@
-﻿@model SpangenbergProject.Models.CustomerContact.CustomerContactController
-<div class="subcontainer1">
-    <h2>KONTAKTA OSS</h2>
-</div>
+﻿<div class="container1">
+    @model SpangenbergProject.Models.CustomerContact.CustomerContactController
+        <div class="leftContainer">
+            <h2>KONTAKTA OSS</h2>
+        </div>
 
-<div class="subcontainer2">
-    <form asp-action="Contact" asp-controller="Form">
-        <label asp-for="firstName">Förnamn:</label> <br />
-        <input asp-for="firstName" placeholder="Förnamn" /> <br /><br />
-        <label asp-for="lastName">Efternamn:</label><br />
-        <input asp-for="lastName" placeholder="Efternamn" /><br /><br />
-        <label asp-for="company">Företag (om sådant finns):</label><br />
-        <input asp-for="company" placeholder="Företag" /><br /><br />
-        <label asp-for="email">E-post</label><br />
-        <input asp-for="email" placeholder="E-postaddress" /><br /><br />
-        <label asp-for="message">Meddelande</label><br />
-        <input asp-for="message" placeholder="Meddelande" /><br /><br />
-        <input type="submit" />
-    </form>
-</div>
+        <div class="middleContainer">
+            <form asp-action="Contact" asp-controller="Form">
+                <label asp-for="firstName">Förnamn:</label> <br />
+                <input asp-for="firstName" placeholder="Förnamn" /> <br /><br />
+                <label asp-for="lastName">Efternamn:</label><br />
+                <input asp-for="lastName" placeholder="Efternamn" /><br /><br />
+                <label asp-for="company">Företag (om sådant finns):</label><br />
+                <input asp-for="company" placeholder="Företag" /><br /><br />
+                <label asp-for="email">E-post</label><br />
+                <input asp-for="email" placeholder="E-postaddress" /><br /><br />
+                <label asp-for="message">Meddelande</label><br />
+                <input asp-for="message" placeholder="Meddelande" /><br /><br />
+                <input type="submit" />
+            </form>
+        </div>
+    </div>

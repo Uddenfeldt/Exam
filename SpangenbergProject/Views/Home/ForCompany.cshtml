@@ -1,11 +1,30 @@
-﻿<div class="subcontainer1">
-    <h2>FÖRETAG</h2>
-    <hr />
-    @Html.ActionLink("LEDARSKAP", "Leadership", "Company", null, new { @class = "link" })<br />
-    @Html.ActionLink("GRUPP/TEAM", "GroupAndTeam", "Company", null, new { @class = "link" })<br />
-    @Html.ActionLink("ORGANISATION", "Organization", "Company", null, new { @class = "link" })<br />
-    @Html.ActionLink("KONFLIKTHANTERING", "Conflicts", "Company", null, new { @class = "link" })<br />
+﻿<div class="container1">
+    <div class="leftContainer">
+        <h2>FÖRETAG</h2>
+        <hr />
+        @Html.ActionLink("LEDARSKAP", "Leadership", "Company", null, new { @class = "link" })<br />
+        @Html.ActionLink("GRUPP/TEAM", "GroupAndTeam", "Company", null, new { @class = "link" })<br />
+        @Html.ActionLink("ORGANISATION", "Organization", "Company", null, new { @class = "link" })<br />
+        @Html.ActionLink("KONFLIKTHANTERING", "Conflicts", "Company", null, new { @class = "link" })<br />
     </div>
-<div class="subcontainer2">
+    <div class="middleContainer divider-column">
+        <h2>TJÄNSTER</h2>
+        <p>
+            Som organisationspsykologer erbjuder vi tjänster relaterade till ledarskap och medarbetarskap inom små och stora organisationer - i grupp eller individuellt. <br />
 
+            Tillsammans med uppdragsgivaren arbetar vi fram en gemensam målbild för en insats utifrån:<br />
+            - analys av aktuell situation,<br />
+            - behov av förändring<br />
+            - riskbedömning<br />
+            - bedömning av förutsättningar för genomförande av åtgärder/insatser <br />
+            <br />
+            Ledord i arbetsprocessen utgår från begrepp som “nytta”, “funktion” och “beprövad
+            erfarenhet” - genom en noggrann analys av situation, kontext och behov kan vi möjliggöra
+            att insatsen/åtgärden ger den varaktiga nytta och fyller den funktion som uppdragsgivaren
+            och verksamheten efterfrågar.
+        </p>
+    </div>
+    <div class="rightContainer">
+        <img src="~/images/Company.jpg" style="width:100%" />
+    </div>
 </div>
