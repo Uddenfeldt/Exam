@@ -15,6 +15,10 @@ namespace SpangenbergProject.Controllers.Company
         {
             return View();
         }
+        public IActionResult LeadershipDevelopment()
+        {
+            return View();
+        }
         public IActionResult GroupAndTeam()
         {
             return View();

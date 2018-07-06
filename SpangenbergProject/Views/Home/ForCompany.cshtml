@@ -1,8 +1,9 @@
 ﻿<div class="container1">
     <div class="leftContainer">
-        <h2>FÖRETAG</h2>
+        @Html.ActionLink("FÖRETAG", "ForCompany", "Home", null, new { @class = "link" })<br />
         <hr />
         @Html.ActionLink("LEDARSKAP", "Leadership", "Company", null, new { @class = "link" })<br />
+        @Html.ActionLink("LEDARSKAPSUTVECKLING","LeadershipDevelopment", "Company", null, new { @class = "underLink" })<br /> <br />
         @Html.ActionLink("GRUPP/TEAM", "GroupAndTeam", "Company", null, new { @class = "link" })<br />
         @Html.ActionLink("ORGANISATION", "Organization", "Company", null, new { @class = "link" })<br />
         @Html.ActionLink("KONFLIKTHANTERING", "Conflicts", "Company", null, new { @class = "link" })<br />

@@ -30,6 +30,11 @@ p{
     font-family:Georgia;
     font-size:25px;
 }
+.underLink{
+    color:slategrey;
+    font-family:Georgia;
+    font-size:15px;
+}
 
 .introduction {
     text-align: center;
@@ -98,9 +103,3 @@ hr {
     overflow: auto;
 }
 
-.image {
-    height: 50px;
-    width: 350px;
-    top: 1px;
-    left: 5px;
-}
