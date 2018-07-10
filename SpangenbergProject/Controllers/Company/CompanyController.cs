@@ -10,7 +10,7 @@ namespace SpangenbergProject.Controllers.Company
 {
     public class CompanyController : Controller
     {
-        // GET: /<controller>/
+        #region Leadership
         public IActionResult Leadership()
         {
             return View();
@@ -19,6 +19,22 @@ namespace SpangenbergProject.Controllers.Company
         {
             return View();
         }
+
+        public IActionResult Management()
+        {
+            return View();
+        }
+        public IActionResult Selection()
+        {
+            return View();
+        }
+        public IActionResult LeadershipDevelopmentProgramme()
+        {
+            return View();
+        }
+        #endregion
+
+        #region Company
         public IActionResult GroupAndTeam()
         {
             return View();
@@ -33,5 +49,6 @@ namespace SpangenbergProject.Controllers.Company
         {
             return View();
         }
+        #endregion
     }
 }
