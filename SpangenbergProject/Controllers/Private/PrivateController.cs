@@ -24,9 +24,9 @@ namespace SpangenbergProject.Controllers
         }
 
         [HttpPost]
-        public IActionResult BookingForPrivate(string FirstName, string LastName)
+        public IActionResult BookingForPrivate(int ID, string FirstName, string LastName,string email, DateTime dtm, DateTime tme )
         {
-            return Content($"Hello {FirstName} {LastName}");
+            return Content($"Hello {FirstName} {LastName} {email} {dtm} {tme}");
         }
 
     }

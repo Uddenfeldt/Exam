@@ -12,14 +12,15 @@ namespace SpangenbergProject.Models.Customer
     public class CustomerModel : Controller
     {
         public int ID { get; set; }
+        [Required]
         public string firstName { get; set; }
+        [Required]
         public string lastName { get; set; }
         [Required]
-        [MinLength(10)]
-        [MaxLength(12)]
-        public int personalNumber { get; set; }
         public string email { get; set; }
+        [Required]
         public DateTime dtm { get; set; }
+        [Required]
         public DateTime tme { get; set; }
     }
 }

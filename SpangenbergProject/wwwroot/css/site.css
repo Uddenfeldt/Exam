@@ -1,4 +1,11 @@
-﻿body {
+﻿.image {
+    position: center;
+    width: 40%;
+    float:left;
+    color:white;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -8,12 +15,14 @@ h1 {
     color: slategrey;
     font-family:Georgia;
 }
+}
 
 h2 {
     text-align: left;
-    color: slategrey;
+    color:slategrey;
     font-family: Georgia;
 }
+
 
 h3 {
     text-align: center;
@@ -90,7 +99,7 @@ hr {
     padding: 0;
     margin: 8px auto;
     height: 0;
-    width: 100%;
+    width: 80%;
     max-height: 0;
     font-size: 1px;
     line-height: 0;
