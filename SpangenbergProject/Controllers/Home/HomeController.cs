@@ -31,6 +31,16 @@ namespace SpangenbergProject.Controllers
         {
             return View();
         }
+
+        public IActionResult Blogg()
+        {
+            var HeadLine = "";
+            var TextWindow = "";
+
+
+
+            return View();
+        }
         public IActionResult Contact()
         {
             return View();
