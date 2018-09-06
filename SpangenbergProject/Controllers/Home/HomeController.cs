@@ -32,10 +32,9 @@ namespace SpangenbergProject.Controllers
             return View();
         }
 
-        public IActionResult Blogg()
+        public IActionResult Blogg(string HeadLine, string TextWindow, DateTime BDtm )
         {
-            var HeadLine = "";
-            var TextWindow = "";
+            
 
 
 
