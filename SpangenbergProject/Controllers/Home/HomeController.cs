@@ -32,14 +32,6 @@ namespace SpangenbergProject.Controllers
             return View();
         }
 
-        public IActionResult Blogg(string HeadLine, string TextWindow, DateTime BDtm )
-        {
-            
-
-
-
-            return View();
-        }
         public IActionResult Contact()
         {
             return View();
