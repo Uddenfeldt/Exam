@@ -1,32 +1,52 @@
-﻿<div class="container1">
-    @model SpangenbergProject.Models.Customer.CustomerModel
-    <div class="leftContainer divider-column">
-        <h3>
-            Här kan ni göra en förfrågan om att boka tid hos oss, när vi tittat igenom vad ni önskar
-            <br />
-            för tid och datum så återkommer vi till er.
-            <br />
-            Mvh Erik och Lotta Spangenberg
-        </h3>
+﻿@model SpangenbergProject.Models.Customer.Booking
+<div class="container1">
+    <h3>
+        Här kan ni göra en förfrågan om att boka tid med oss.<br />
+        Vänligen skriv ner den information vi ber om, så återkommer vi <br />
+        inom kort. Med vänlig hälsning Erik Spangenberg och Lotta Spangenberg.
+    </h3>
+    <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Förnamn:</label>
+                        <input type="text" class="form-control" name="FirstName" id="FirstName">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Efternamn:</label>
+                        <input type="text" class="form-control" name="LastName" id="LastName">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Email:</label>
+                        <input type="text" class="form-control" name="Email" id="Email">
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class="form-group">
+                        <label class="control-label">Välj datum:</label>
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary" placeholder="Skicka">
+        </div>
     </div>
-    <div class="middleContainer divider-column">
-        <form asp-action="BookingForPrivate" asp-controller="Form">
-            <label asp-for="firstName">Förnamn:</label><br />
-            <input asp-for="firstName" placeholder="Förnamn" /><br /><br />
-            <label asp-for="lastName">Efternamn:</label> <br />
-            <input asp-for="lastName" placeholder="Efternamn" /><br /><br />
-            <label asp-for="email">E-post:</label><br />
-            <input asp-for="email" placeholder="E-postaddress" /><br /><br />
-            <label asp-for="dtm">Datum: </label> <br />
-            <input type="text" id="datepicker"><br /><br />
-            <label asp-for="tme">Vilken tid:</label><br />
-            <input type="time" /> <br /><br />
-            <button type="submit" class="btn btn-dark" id="datepicker">Skicka</button>
-        </form>
-    </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#datepicker").datepicker();
-        });
-    </script>
 </div>
+<script>
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>

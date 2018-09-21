@@ -27,9 +27,15 @@ namespace SpangenbergProject.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult BookingForPrivate()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult BookingForPrivate(int Id, string FirstName, string LastName, string Email, DateTime Dtm, TimeSpan Tme)
+        {
+            return Content($"Hej {FirstName} {LastName}, din email är {Email}. ni önskade boka tid den {Dtm} klockan {Tme}");
         }
 
         public IActionResult Contact()
